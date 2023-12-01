@@ -17,17 +17,6 @@ int parseStringToNum(std::string input) {
     return -1;
 }
 
-int getNumStringLoc(std::string input) {
-    for (int x = 0; x < input.length(); x ++) {
-        for (int y = 0; y < 10; y ++) {
-            if (input.substr(x, numStrs[y].length()) == numStrs[y]) {
-                return x;
-            }
-        }
-    }
-    return -1;
-}
-
 int getNum(std::string input) {
     std::string ret = "";
     for (int x = 0; x < input.length(); x ++) {
