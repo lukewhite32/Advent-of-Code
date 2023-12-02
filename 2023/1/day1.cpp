@@ -34,7 +34,6 @@ int getNum(std::string input) {
         }
     }
     ret = std::string(1, ret[0]) + std::string(1, ret[ret.length()-1]);
-    std::cout << "RET: " << ret << std::endl;
     return std::stoi(ret);
 }
 
